@@ -1,34 +1,60 @@
+Here is the code for the Blue Zone (bluezone.html) with the background color changed to the deep blue, and the text colors adjusted for contrast and consistency.
+
+🔵 Updated Blue Zone Code (bluezone.html)
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Blue Zone - Flora and Fauna</title>
     <style>
-        /* CSS is the same as the red.html template for consistent styling */
         body {
-            background-color: #f4ece5; /* soft beige-brown */
+            /* === BLUE ZONE COLOR: #336699 (Deep Blue) === */
+            background-color: #336699; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0 20px;
-            color: #4b2e1a; /* deep brown text */
-            border: solid #7b4b2a; /* brown border */
+            color: white; /* Light text for better contrast on blue */
         }
+
+        /* --- Navigation Link Styling --- */
+        .back-link {
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            display: block; 
+            text-align: left;
+        }
+
+        .back-link a {
+            color: #FFD700; /* Gold/Yellow for visibility */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        /* ------------------------------- */
 
         h1 {
             text-align: center;
-            color: #4b2e1a;
+            color: white;
             font-family: Garamond, serif;
-            margin-top: 40px;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
 
         .info {
-            background-color: #ffffff;
-            border: 2px solid #7b4b2a;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white card */
+            border: 2px solid #003366; /* Darker blue border */
             border-radius: 8px;
             padding: 20px;
             max-width: 700px;
             margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            color: #333; /* Dark text for readability inside the card */
         }
 
         .info p {
@@ -41,11 +67,12 @@
             margin: 30px auto;
             max-width: 1200px;
             background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            color: #333; /* Dark text in table */
         }
 
         table th, table td {
-            border: 1px solid #cca88a;
+            border: 1px solid #336699;
             padding: 12px 15px;
             font-size: 14px;
             text-align: left;
@@ -53,12 +80,12 @@
         }
 
         table th {
-            background-color: #b88a6d; /* brown header */
+            background-color: #003366; /* Darker blue header */
             color: white;
         }
 
         tr:hover {
-            background-color: #e6d5c9; /* light brown hover */
+            background-color: #e6f0ff; /* Very light blue hover */
         }
 
         /* Responsive Mobile View (4-column adaptation) */
@@ -72,7 +99,7 @@
             }
 
             table tr {
-                 border-bottom: 2px solid #7b4b2a;
+                 border-bottom: 2px solid #003366;
                  margin-bottom: 15px;
             }
 
@@ -95,7 +122,7 @@
                 padding-right: 10px;
                 white-space: nowrap;
                 font-weight: bold;
-                color: #4b2e1a;
+                color: #336699; /* Blue label */
             }
 
             table td:nth-child(1)::before { content: "Species (Common Name)"; }
@@ -108,12 +135,16 @@
             text-align: center;
             margin: 40px 0 20px;
             font-size: 14px;
-            color: #555;
+            color: white; /* White text for footer */
         }
     </style>
 </head>
 
 <body>
+    
+    <div class="back-link">
+        <a href="index.html">← Back to Campus Map</a>
+    </div>
 
     <h1>Senior School - Blue Zone</h1>
 
