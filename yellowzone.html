@@ -4,31 +4,50 @@
     <meta charset="UTF-8">
     <title>Yellow Zone - Flora and Fauna</title>
     <style>
-        /* CSS is the same as the red.html template for consistent styling */
         body {
-            background-color: #f4ece5; /* soft beige-brown */
+            /* NEW PRIMARY BACKGROUND COLOR: #bfaa37 */
+            background-color: #bfaa37; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0 20px;
-            color: #4b2e1a; /* deep brown text */
-            border: solid #7b4b2a; /* brown border */
+            color: #333; /* Dark text for contrast against light background */
+        }
+
+        .back-link {
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            display: block; 
+            text-align: left;
+        }
+
+        .back-link a {
+            color: #1a1a1a; /* Very dark link for contrast */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
         }
 
         h1 {
             text-align: center;
-            color: #4b2e1a;
+            color: #1a1a1a; /* Dark header text */
             font-family: Garamond, serif;
             margin-top: 40px;
+            margin-bottom: 30px;
         }
 
         .info {
-            background-color: #ffffff;
-            border: 2px solid #7b4b2a;
+            background-color: #fff;
+            border: 2px solid #8c832a; /* Darker tone of the primary color for border */
             border-radius: 8px;
             padding: 20px;
             max-width: 700px;
             margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            color: #333;
         }
 
         .info p {
@@ -41,11 +60,12 @@
             margin: 30px auto;
             max-width: 1200px;
             background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            color: #333;
         }
 
         table th, table td {
-            border: 1px solid #cca88a;
+            border: 1px solid #bfaa37; /* Table border matches new background */
             padding: 12px 15px;
             font-size: 14px;
             text-align: left;
@@ -53,15 +73,14 @@
         }
 
         table th {
-            background-color: #b88a6d; /* brown header */
-            color: white;
+            background-color: #8c832a; /* Darker tone of the primary color for header */
+            color: white; /* White text for header contrast */
         }
 
         tr:hover {
-            background-color: #e6d5c9; /* light brown hover */
+            background-color: #f5f0e3; /* Very light yellow hover */
         }
 
-        /* Responsive Mobile View (4-column adaptation) */
         @media screen and (max-width: 768px) {
             table, thead, tbody, th, td, tr {
                 display: block;
@@ -72,7 +91,7 @@
             }
 
             table tr {
-                 border-bottom: 2px solid #7b4b2a;
+                 border-bottom: 2px solid #8c832a; /* Border matches dark tone */
                  margin-bottom: 15px;
             }
 
@@ -95,7 +114,7 @@
                 padding-right: 10px;
                 white-space: nowrap;
                 font-weight: bold;
-                color: #4b2e1a;
+                color: #1a1a1a; /* Dark label text */
             }
 
             table td:nth-child(1)::before { content: "Species (Common Name)"; }
@@ -108,12 +127,16 @@
             text-align: center;
             margin: 40px 0 20px;
             font-size: 14px;
-            color: #555;
+            color: #333; /* Dark footer text */
         }
     </style>
 </head>
 
 <body>
+    
+    <div class="back-link">
+        <a href="index.html">← Back to Campus Map</a>
+    </div>
 
     <h1>Repton Circle - Yellow Zone</h1>
 
